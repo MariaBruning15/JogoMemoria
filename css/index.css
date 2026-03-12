@@ -1,0 +1,80 @@
+:root{
+    --bg: linear-gradient(135deg, #d4ade0, #b7ade0);
+    --bg-button: #b18fd9;
+    --button-hover: #cbaaf2;
+    --button-selecionado: #9877bf;
+    --bg-divs: #dccfe3;
+    --border: white;
+}
+
+body[data-theme="dark"]{
+    --bg: linear-gradient(135deg, #81588e, #50447a);
+    --bg-button: #765898;
+    --button-hover: #af8cd6;
+    --button-selecionado: rgb(95, 67, 127);
+    --bg-divs: #bdb7c0;
+    --border: #e7e1eb;
+}
+
+body{
+background: var(--bg);
+min-height: 100vh;
+margin: 0;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: Monospace;
+}
+
+header{
+border: 1px solid var(--border);
+border-radius: 10px;
+background: var(--bg-divs);
+padding: 10px;
+margin: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.3rem;
+font-size: 20px;
+}
+
+.board {
+display: grid;
+grid-template-columns: repeat(4, 120px);
+border: 1px solid var(--border);
+border-radius: 10px;
+background: var(--bg-divs);
+padding: 10px;
+}
+
+button{
+background-color: var(--bg-button);
+border: none;
+color: white;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+padding: 10px 20px;
+transition: all 0.6s;
+font-size: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card{
+height: 100px;
+width: 100px;
+margin: 0.5rem 0.5rem;
+font-size: 20px;
+}
+
+button:hover{
+background: var(--button-hover);
+}
+
+.card.selecionado{
+background: var(--button-selecionado);
+}
