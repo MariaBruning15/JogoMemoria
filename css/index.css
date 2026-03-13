@@ -7,7 +7,7 @@
     --border: white;
 }
 
-body[data-theme="dark"]{
+html[data-theme="dark"]{
     --bg: linear-gradient(135deg, #81588e, #50447a);
     --bg-button: #765898;
     --button-hover: #af8cd6;
@@ -15,6 +15,8 @@ body[data-theme="dark"]{
     --bg-divs: #bdb7c0;
     --border: #e7e1eb;
 }
+
+
 
 body{
 background: var(--bg);
